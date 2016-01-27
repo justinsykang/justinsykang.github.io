@@ -1,3 +1,73 @@
 body {
-	font-family: Sans-Serif;
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
+}
+
+h1 {
+	font-weight: 300;
+	text-align: center;
+	margin: 0;
+	font-size: 50px;
+}
+
+h2 {
+	font-weight: 300;
+	margin: -4px 0px 0px 0px;
+	font-size: 30px;
+}
+
+h3 {
+	font-weight: 400;
+	letter-spacing: 3px;
+	font-size: 12px;
+	position: relative;
+}
+
+#wrap {
+	top: 330px;
+	position: relative;
+}
+
+
+ul {
+	list-style-type: none;
+	width: auto;
+	height: 150px;
+	position: absolute;
+	top: 150px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+ 	margin: auto;
+ 	padding: 0;
+}
+
+li {
+	display: inline;
+	margin: 10px;
+}
+
+.pic {
+	background-color: #53b5e6;
+	height: 150px;
+	width: 250px;
+	display: inline-block;
+}
+
+#descriptions {
+	width: auto;
+	height: auto;
+	position: absolute;
+	top: 66%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+ 	margin: auto;
+
+}
+
+.swag {
+	height: 150px;
+	width: 250px;
+	display: inline-block;
 }
