@@ -1,3 +1,11 @@
+html { 
+  background: url(Images/test.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 body {
 	font-family: 'Open Sans', sans-serif;
 	text-align: center;
@@ -21,6 +29,7 @@ h3 {
 	letter-spacing: 3px;
 	font-size: 12px;
 	position: relative;
+	width: auto;
 }
 
 #wrap {
@@ -33,8 +42,8 @@ ul {
 	list-style-type: none;
 	width: auto;
 	height: 150px;
-	position: absolute;
-	top: 150px;
+	position: relative;
+	top: 350px;
   bottom: 0;
   left: 0;
   right: 0;
@@ -43,30 +52,12 @@ ul {
 }
 
 li {
-	display: inline;
+	display: inline-block;
 	margin: 10px;
 }
 
 .pic {
 	background-color: #53b5e6;
-	height: 150px;
-	width: 250px;
-	display: inline-block;
-}
-
-#descriptions {
-	width: auto;
-	height: auto;
-	position: absolute;
-	top: 66%;
-  bottom: 0;
-  left: 0;
-  right: 0;
- 	margin: auto;
-
-}
-
-.swag {
 	height: 150px;
 	width: 250px;
 	display: inline-block;
