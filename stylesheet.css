@@ -64,3 +64,12 @@ h2 {
 	color: black;
 	position: relative;
 }
+
+svg {
+	fill: black;
+}
+
+div #preload { 
+	display: none;
+}
+

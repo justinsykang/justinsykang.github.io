@@ -467,8 +467,20 @@
 		</svg>
 	</div>
 </body>
-
 <script>
+    $('svg').on({
+        mousedown: function() {
+            $(this).css('height', '165.0796px'),
+            $(this).css('width', '768.74px');
+        },
+        mouseup: function() {
+            $(this).css('height', '173.768px'),
+            $(this).css('width', '809.2px');
+        }
+    })
+</script>
+<script>
+
 $("#wrap").on("click", function () {
     $("html").css("background", "url(Images/bg2.jpg) no-repeat center center fixed");
     $("html").css("-webkit-background-size", "cover")
@@ -477,6 +489,23 @@ $("#wrap").on("click", function () {
     $("html").css("background-size", "cover")
 });
 </script>
+
+<div class="hidden">
+	<script type="text/javascript">
+		<!--//--><![CDATA[//><!--
+			var images = new Array()
+			function preload() {
+				for (i = 0; i < preload.arguments.length; i++) {
+					images[i] = new Image()
+					images[i].src = preload.arguments[i]
+				}
+			}
+			preload(
+				"Images/bg2.jpg"
+			)
+		//--><!]]>
+	</script>
+</div>
 
 </html>
 
