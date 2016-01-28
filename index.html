@@ -3,18 +3,63 @@
 <head>
 	<link rel="stylesheet" type="text/css" href="stylesheet.css">
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+
+			<script src="js/modernizr.custom.js"></script>
+
+
 </head>
 
 <body>
+			<div class="main">
+				<ul id="cbp-bislideshow" class="cbp-bislideshow">
+					<li><img src="images/1.png" alt="image01"/></li>
+					<li><img src="images/2.png" alt="image02"/></li>
+					<li><img src="images/3.jpg" alt="image03"/></li>
+					<li><img src="images/4.jpg" alt="image04"/></li>
+					<li><img src="images/5.jpg" alt="image05"/></li>
+				</ul>
+				<div id="cbp-bicontrols" class="cbp-bicontrols">
+					<span class="cbp-biprev"></span>
+					<span class="cbp-bipause"></span>
+					<span class="cbp-binext"></span>
+				</div>
+			</div>
+
+	<div id="topsection">
+		<h4>j k</h4>
+ 		<ul id="points">
+			<li class="guess"><h5>ABOUT</h5></li>
+			<li class="guess"><h5>WORK</h5></li>
+		</ul>
+	</div>
+
 	<div id="wrap"> 
 		<h1>Hello!</h1>
 		<h2>My name is Justin.</h2>
 	</div>
-	<ul>
-		<li><div class="pic"></div><h3>GRAPHIC DESIGN</h3></li>
-		<li><div class="pic"></div><h3>PHOTOGRAPHY</h3></li>
-		<li><div class="pic"></div><h3>USER EXPERIENCE</h3></li>
+
+	<ul id="sonic">
+		<li class="wow"><div class="pic"></div><h3>GRAPHIC DESIGN</h3></li>
+		<li class="wow"><div class="pic"></div><h3>PHOTOGRAPHY</h3></li>
+		<li class="wow"><div class="pic"></div><h3>USER EXPERIENCE</h3></li>
 	</ul>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<!-- imagesLoaded jQuery plugin by @desandro : https://github.com/desandro/imagesloaded -->
+<script src="js/jquery.imagesloaded.min.js"></script>
+<script src="js/cbpBGSlideshow.min.js"></script>
+<script>
+	$(function() {
+		cbpBGSlideshow.init();
+	});
+</script>
+
+
 </body>
 
-</html
+
+
+</html>
+

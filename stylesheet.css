@@ -1,9 +1,28 @@
-html { 
-  background: url(Images/test.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+#topsection {
+	width: 100%;
+	height: 75px;
+	display: inline-block;
+}
+
+#points {
+	float: right;
+	top: 0;
+	margin-right: 40px;
+}
+.guess {
+	display: inline-block;
+	margin-left: 10px;
+}
+
+h4 {
+	float: left;
+	margin: 10px 0px 0px 30px;
+	display: inline
+}
+
+h5 {
+	font-weight: 700;
+	font-size: 12px;
 }
 
 body {
@@ -32,18 +51,22 @@ h3 {
 	width: auto;
 }
 
+h4 {
+	font-size: 30px;
+}
+
 #wrap {
-	top: 330px;
+	top: 230px;
 	position: relative;
 }
 
 
-ul {
+#sonic {
 	list-style-type: none;
 	width: auto;
 	height: 150px;
 	position: relative;
-	top: 350px;
+	top: 250px;
   bottom: 0;
   left: 0;
   right: 0;
@@ -51,7 +74,7 @@ ul {
  	padding: 0;
 }
 
-li {
+.wow {
 	display: inline-block;
 	margin: 10px;
 }
@@ -61,4 +84,126 @@ li {
 	height: 150px;
 	width: 250px;
 	display: inline-block;
+}
+
+.cbp-bislideshow {
+	list-style: none;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	padding: 0;
+	margin: 0;
+}
+
+.cbp-bislideshow li {
+	position: absolute;
+	width: 101%;
+	height: 101%;
+	top: -0.5%;
+	left: -0.5%;
+	opacity: 0;
+	-webkit-transition: opacity 1s;
+	-moz-transition: opacity 1s;
+	transition: opacity 1s;
+}
+
+/* If background-size supported we'll add the images to the background of the li */
+
+.backgroundsize .cbp-bislideshow li {
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+}
+
+/* ...and hide the images */
+.backgroundsize .cbp-bislideshow li img {
+	display: none;
+}
+
+.cbp-bislideshow li img {
+	display: block;
+	width: 100%;
+}
+
+.cbp-bicontrols {
+	position: fixed;
+	width: 300px;
+	height: 100px;
+	margin: -50px 0 0 -150px;
+	top: 50%;
+	left: 50%;
+}
+
+.cbp-bicontrols span {
+	float: left;
+	width: 100px;
+	height: 100px;
+	position: relative;
+	cursor: pointer;
+}
+
+.cbp-bicontrols span:before {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	text-align: center;
+	font-family: 'Open Sans';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 100px;
+	font-size: 80px;
+	color: #fff;
+	-webkit-font-smoothing: antialiased;
+	opacity: 0.7;
+}
+
+.cbp-bicontrols span:hover:before {
+	opacity: 1;
+}
+
+.cbp-bicontrols span:active:before {
+	top: 2px;
+}
+
+span.cbp-biplay:before {
+	content: "\e002";
+}
+
+span.cbp-bipause:before {
+	content: "\e003";
+	background-color: red;
+}
+
+span.cbp-binext:before {
+	content: "\e000";
+	background-color: red;
+}
+
+span.cbp-biprev:before {
+	content: "\e001";
+	background-color: red;
+}
+
+.cbp-bicontrols span.cbp-binext {
+	float: right;
+}
+
+
+/* Fallback */
+
+.no-js.no-backgroundsize .cbp-bislideshow li:first-child {
+	opacity: 1;
+}
+
+.no-js.backgroundsize .cbp-bislideshow li:first-child img {
+	display: block;
 }
