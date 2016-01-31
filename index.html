@@ -28,8 +28,8 @@
 			</svg>
 		</div>
  		<ul id="navmenu">
-			<li class="navoption"><h5> ABOUT</h5></li>
-			<li class="navoption"><h5> WORK</h5></li>
+			<li class="navoption"><a href="file:///C:/Users/Justin/Documents/GitHub/justinsykang.github.io/about.html"><h5>ABOUT</h5></a></li>
+			<li class="navoption"><h5>WORK</h5></li>
 		</ul>
 	</div> 
 	<div id="main">
@@ -486,7 +486,7 @@
 	</div>
 </body>
 <script>
-    $('svg').on({
+    $('#main svg').on({
         mousedown: function() {
             $(this).css('height', '165.0796px'),
             $(this).css('width', '768.74px');
@@ -498,22 +498,40 @@
     })
 </script>
 
-// <script>
-
-// 	$("#main").on("click", function () {
-// 	    $('html').css('background', 'url(Images/bg4.jpg) no-repeat center center fixed');
-// 	    $('html').css('-webkit-background-size', 'cover')
-// 	    $('html').css('-moz-background-size', 'cover')
-// 	    $('html').css('-o-background-size', 'cover')
-// 	    $('html').css('background-size', 'cover')
-// 	});
-// </script>
 
 <script>
-	$("main").on("click", function () {
-		$('bg').attr("src", 'Images/bg2.jpg');
-	});
+$(function () { // this is a shortcut for document ready
+    var stuff = ['Images/bg.jpg', 
+    							'Images/bg2.jpg', 
+    							'Images/bg3.jpg', 
+    							'Images/bg4.jpg', 
+    							'Images/bg5.jpg', 
+    							'Images/bg6.jpg', 
+    							'Images/bg7.jpg', 
+    							'Images/bg8.jpg', 
+    							'Images/bg9.jpg'],
+        counter = 0;
+
+    console.log(stuff[counter]); // your initial value
+
+    // the next line, of course, assumes you have an element with id="next"
+    $('#main svg').click(function () {
+        counter = (counter + 1) % stuff.length; // increment your counter
+        // the modulus (%) operator resets the counter to 0
+        // when it reaches the length of the array
+
+        console.log(stuff[counter]); // the new incremented value
+        $('#bg').attr("src", stuff[counter]);
+    });
+});
+
 </script>
+
+// <script>
+// 	$("main").on("click", function () {
+// 		$('bg').attr("src", 'Images/bg2.jpg');
+// 	});
+// </script>
 
 		<div class="hidden">
 			<script type="text/javascript">

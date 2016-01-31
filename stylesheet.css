@@ -10,7 +10,12 @@
   background-size: cover;
 }
 */
-#bg { position: fixed; top: 0; left: 0; }
+#bg {
+	position: fixed;
+	top: 0; 
+	left: 0; 
+}
+
 .bgwidth { width: 100%; }
 .bgheight { height: 100%; }
 
@@ -32,6 +37,11 @@
 	margin-left: 10px;
 	margin-right: 20px;
 	margin-top: -13px;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
 }
 
 h5:hover {
@@ -85,7 +95,7 @@ h2 {
 	position: relative;
 }
 
-svg {
+.main svg {
 	fill: black;
 }
 
