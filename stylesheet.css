@@ -14,6 +14,10 @@
 	position: fixed;
 	top: 0; 
 	left: 0; 
+	-webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none;          /* Likely future */      
 }
 
 .bgwidth { width: 100%; }
@@ -31,12 +35,21 @@
 	float: right;s
 	top: 0;
 	margin-right: 50px;
+	-webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none;          /* Likely future */      
 }
 .navoption {
 	display: inline-block;
 	margin-left: 10px;
 	margin-right: 20px;
 	margin-top: -13px;
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none;          /* Likely future */      
+
 }
 
 a {

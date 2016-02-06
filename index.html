@@ -10,9 +10,10 @@
 </head>
 
 <body>
+
 	<div id="topsection">
 		<div id="navlogo">
-			<?xml version="1.0" encoding="utf-8"?>
+			<a href="file:///C:/Users/Justin/Documents/GitHub/justinsykang.github.io/index.html"><?xml version="1.0" encoding="utf-8"?>
 			<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 			<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 			<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -25,13 +26,14 @@
 				<path d="M31.229,20.574l2.386-3.05l5.614-6.099h6.17l-7.964,8.7l8.448,11.354H39.57l-5.776-8.125l-2.35,1.883v6.242h-5.471V3.569
 					h5.471v12.449l-0.287,4.556H31.229z"/>
 			</g>
-			</svg>
+			</svg></a>
 		</div>
  		<ul id="navmenu">
 			<li class="navoption"><a href="file:///C:/Users/Justin/Documents/GitHub/justinsykang.github.io/about.html"><h5>ABOUT</h5></a></li>
-			<li class="navoption"><h5>WORK</h5></li>
+			<li class="navoption"><a href="file:///C:/Users/Justin/Documents/GitHub/justinsykang.github.io/work.html"><h5>WORK</h5></a></li>
 		</ul>
 	</div> 
+
 	<div id="main">
 		<?xml version="1.0" encoding="utf-8"?>
 		<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
@@ -484,9 +486,10 @@
 		</g>
 		</svg>
 	</div>
+	
 </body>
-<script>
-    $('#main svg').on({
+<script> // #main clicking animation
+    $('.main svg').on({
         mousedown: function() {
             $(this).css('height', '165.0796px'),
             $(this).css('width', '768.74px');
@@ -499,61 +502,59 @@
 </script>
 
 
-<script>
-$(function () { // this is a shortcut for document ready
-    var stuff = ['Images/bg.jpg', 
-    							'Images/bg2.jpg', 
-    							'Images/bg3.jpg', 
-    							'Images/bg4.jpg', 
-    							'Images/bg5.jpg', 
-    							'Images/bg6.jpg', 
-    							'Images/bg7.jpg', 
-    							'Images/bg8.jpg', 
-    							'Images/bg9.jpg'],
-        counter = 0;
+<script> // Iterates through images
+	$(function () { // Preload Function
+	  var stuff = ['Images/bg.jpg', 
+	  							'Images/bg2.jpg', 
+	  							'Images/bg3.jpg', 
+	  							'Images/bg4.jpg', 
+	  							'Images/bg5.jpg', 
+	  							'Images/bg6.jpg', 
+	  							'Images/bg7.jpg', 
+	  							'Images/bg8.jpg', 
+	  							'Images/bg9.jpg'];
+	      counter = 0;
 
-    console.log(stuff[counter]); // your initial value
+	  console.log(stuff[counter]); // your initial value
 
-    // the next line, of course, assumes you have an element with id="next"
-    $('#main svg').click(function () {
-        counter = (counter + 1) % stuff.length; // increment your counter
-        // the modulus (%) operator resets the counter to 0
-        // when it reaches the length of the array
+	  // the next line, of course, assumes you have an element with id="next"
+	  $('#main svg').click(function () {
+	      counter = (counter + 1) % stuff.length; // increment your counter
+	      // the modulus (%) operator resets the counter to 0
+	      // when it reaches the length of the array
 
-        console.log(stuff[counter]); // the new incremented value
-        $('#bg').attr("src", stuff[counter]);
-    });
-});
-
+	      console.log(stuff[counter]); // the new incremented value
+	      $('#bg').attr("src", stuff[counter]);
+	  });
+	});
 </script>
 
-// <script>
-// 	$("main").on("click", function () {
-// 		$('bg').attr("src", 'Images/bg2.jpg');
-// 	});
-// </script>
-
-		<div class="hidden">
-			<script type="text/javascript">
-				<!--//--><![CDATA[//><!--
-					var Images = new Array()
-					function preload() {
-						for (i = 0; i < preload.arguments.length; i++) {
-							Images[i] = new Image()
-							Images[i].src = preload.arguments[i]
-						}
-					}
-					preload(
-						"Images/bg.jpg",
-						"Images/bg2.jpg",
-						"Images/bg3.jpg",
-						"Images/bg4.jpg"
-					)
-				//--><!]]>
-			</script>
+<div class="hidden">
+	<script type="text/javascript"> // Preloader
+		<!--//--><![CDATA[//><!--
+			var Images = new Array()
+			function preload() {
+				for (i = 0; i < preload.arguments.length; i++) {
+					Images[i] = new Image()
+					Images[i].src = preload.arguments[i]
+				}
+			}
+			preload(
+				"Images/bg.jpg",
+				"Images/bg2.jpg",
+				"Images/bg3.jpg",
+				"Images/bg4.jpg"
+				"Images/bg5.jpg",
+				"Images/bg6.jpg",
+				"Images/bg7.jpg",
+				"Images/bg8.jpg"
+				"Images/bg9.jpg",
+			)
+		//--><!]]>
+	</script>
 </div>
 
-<script>
+<script> // Fullize Image
 	$(window).load(function() {    
 		var theWindow        = $(window),
 		    $bg              = $("#bg"),
