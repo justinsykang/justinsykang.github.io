@@ -39,39 +39,63 @@
 
 	<p>I'm a Southern Californian native currently residing in sometimes rainy, sometimes scorching Sacramento. Among my many loves are food holding more food, bridges and being right on the fucking internet.</p>
 
-	<p>The following is a short resume of my video game history.</p>
+	<div class="show always">
+    <div><p>The following is a short resume of my video game history.</p>
+        <div class="togglehidden">See more</div>
+    </div>
+	</div>
+	<div class="hidefirst">
+	  <div>
+		<h6>World of Warcraft: Raid Leader</h6>
+		<h4> Coordinated a rotating group of 40 players in complex and challenging encounters, making sure participants understood the idiosyncrasies of each engagement </h4>
 
-	<h6>World of Warcraft: Raid Leader</h6>
-	<h4> Coordinated a rotating group of 40 players in complex and challenging encounters, making sure participants understood the idiosyncrasies of each engagement </h4>
+		<h4>Organized logistics surrounding meeting times for raids, as well as taking count of required materials and consumables that would be needed</h4>
 
-	<h4>Organized logistics surrounding meeting times for raids, as well as taking count of required materials and consumables that would be needed</h4>
+		<h4>Developed performance review system, making sure each player is playing at their fullest potential, while still taking into account their out of game responsibilites </h4>
 
-	<h4>Developed performance review system, making sure each player is playing at their fullest potential, while still taking into account their out of game responsibilites </h4>
+		<h6>Defense of the Ancients 2: Position 5 Support Player</h6>
+		<h4> Mastered over 20 heroes in order to have a diverse pool of heroes to choose from in order to best support my team depending on the matchup </h4>
 
-	<h6>Defense of the Ancients 2: Position 5 Support Player</h6>
-	<h4> Mastered over 20 heroes in order to have a diverse pool of heroes to choose from in order to best support my team depending on the matchup </h4>
+		<h4>Maintained wards and vision control throughout the map, as well as calling out rotations from lanes by the enemies and major item pickup</h4>
 
-	<h4>Maintained wards and vision control throughout the map, as well as calling out rotations from lanes by the enemies and major item pickup</h4>
+		<h4>Provided both support to the 1 Position Carry in lane, as well as rotational support to my teammates, keeping up pressure on enemy heroes on the rest of the ma </h4>
 
-	<h4>Provided both support to the 1 Position Carry in lane, as well as rotational support to my teammates, keeping up pressure on enemy heroes on the rest of the ma </h4>
+		<h6>League of Legends: Filthy Casual Jungler</h6>
+		<h4>Assisted my team as the jungler player, usually as Udyr beause I'm a dirty Udyr picker and that's all I know how to play because Riot gave me Spirit Guard Udyr</h4>
 
-	<h6>League of Legends: Filthy Casual Jungler</h6>
-	<h4>Assisted my team as the jungler player, usually as Udyr beause I'm a dirty Udyr picker and that's all I know how to play because Riot gave me Spirit Guard Udyr</h4>
+		<h4>Ignored lanes and enemy jungle movements because I needed to get my Devourer Enchantment because you should be able to win lane yourself you noo</h4>
 
-	<h4>Ignored lanes and enemy jungle movements because I needed to get my Devourer Enchantment because you should be able to win lane yourself you noo</h4>
+		<h4>Blame team for any losses because my Udyr play is impeccable and I would be Diamond easy if I weren't stuck in elo hell and always matched with feeders on my team</h4>
 
-	<h4>Blame team for any losses because my Udyr play is impeccable and I would be Diamond easy if I weren't stuck in elo hell and always matched with feeders on my team</h4>
-
-	<h6>Proficiencies</h6>
-	<h4>League of Legends - Filthy Scrub Jungler, learning ADC so I have an excuse to farm</h4>
-	<h4>Dota 2 - 6 Years of Experience, 4 and 5 Position</h4>
-	<h4>World of Warcraft - Multiple World Firsts, Raid Leader Experience, Raid Analyst</h4>
-	<h4>Path of Exile - Reave Ranger, FB Icecrash, Quillrain EA, 2h Flickerstriker, Arc Witch </h4>
-	<h4>Pokemon - 3 time regional tournament winne</h4>
-	<h4>Minesweeper - Sub 10 Beginner, Consistently finish Expert</h4>
-
+		<h6>Proficiencies</h6>
+		<h4>League of Legends - Filthy Scrub Jungler, learning ADC so I have an excuse to farm</h4>
+		<h4>Dota 2 - 6 Years of Experience, 4 and 5 Position</h4>
+		<h4>World of Warcraft - Multiple World Firsts, Raid Leader Experience, Raid Analyst</h4>
+		<h4>Path of Exile - Reave Ranger, FB Icecrash, Quillrain EA, 2h Flickerstriker, Arc Witch </h4>
+		<h4>Pokemon - 3 time regional tournament winne</h4>
+		<h4>Minesweeper - Sub 10 Beginner, Consistently finish Expert</h4>
+	  </div>
+	</div>
 
 
+<script>
+$(document).ready(function() {
+    //hide the content when the document is ready
+    $('.hidefirst').hide();
+    //on clicking the See more/Hide More toggle the visible state of element
+    $('.togglehidden').bind('click', function() {
+        $('.hidefirst').slideToggle(function() {
+            // if element is visible change the text to Hide more
+            if ($(this).is(':visible'))
+                $('.togglehidden').html('Hide more'),
+              	window.scrollTo(0,document.body.scrollHeight);
+            // else change the text do See more
+            else
+                $('.togglehidden').html('See more'); 
+        });
+    });
+});
+</script>
 
 
 
@@ -90,26 +114,6 @@
 				    $bg
 				    	.removeClass()
 				    	.addClass('bgwidth');
-				}
-			}          			
-			theWindow.resize(resizeBg).trigger("resize");
-		});
-	</script>
-
-	<script> // Fullize Image
-		$(window).load(function() {    
-			var theWindow        = $(window),
-			    $bg              = $("#shader"),
-			    aspectRatio      = $bg.width() / $bg.height();
-			function resizeBg() {
-				if ( (theWindow.width() / theWindow.height()) < aspectRatio ) {
-				    $bg
-				    	.removeClass()
-				    	.addClass('shaderheight');
-				} else {
-				    $bg
-				    	.removeClass()
-				    	.addClass('shaderwidth');
 				}
 			}          			
 			theWindow.resize(resizeBg).trigger("resize");
