@@ -44,6 +44,7 @@ p {
 	text-align: center;
 	font-size: 20px;
 }
+
 .wrapper {
 	margin-left: 1%;
 	margin-right: 1%;
@@ -69,6 +70,12 @@ h3 {
 	color: white;
 }
 
+.iwrapper {
+	margin: 0 auto;
+	text-align: center;
+
+}
+
 .iconholder {
 	height: 10px;
 	width: 10px;
@@ -77,6 +84,5 @@ h3 {
 }
 
 img.icon {
-	height: 10px;
-	width: 10px;
+	height: 30px;
 }
