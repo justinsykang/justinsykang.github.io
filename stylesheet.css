@@ -70,9 +70,8 @@ h3 {
 }
 
 .iconholder {
-	height: 30px;
-	background-color: black;
+	height: 10px;
 	margin: 10px;
 	position: relative;
-
+	text-align: center;
 }
