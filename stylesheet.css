@@ -1,20 +1,37 @@
 body {
 	font-family: 'Karla', sans-serif;
+	border-left: solid;
+	border-color: yellow;
+	border-width: 20px;
+	height: 100%;
+	margin: 0 auto;
 }
 
 div{
 	display: inline-block;
 }
 
+a {
+	text-decoration: none;
+	color: grey;
+}
+
 #name {
-	margin-left: 8px;
-	margin-right: 10px;
-	font-size: 30px;
-	letter-spacing: -4px;
+	margin-left: 12px;
+	margin-right: 14px;
+	font-size: 45px;
+	letter-spacing: -7px;
+	margin-bottom: -20px;
+	margin-top: -10px;
 }
 
 .workabout {
 	letter-spacing: -1px;
+	font-size: 20px;
+}
+
+h2 {
+	font-weight: lighter;
 }
 
 #container {
@@ -25,14 +42,12 @@ div{
 p {
 	margin-top: -20px;
 	text-align: center;
-	font-s
-	ize: 20px;
+	font-size: 20px;
 }
-#wrapper {
-	margin-top: 10px;
+.wrapper {
+	margin-left: 1%;
+	margin-right: 1%;
 	text-align: center;
-	display: inline-block;
-	width: 100%;
 }
 
 .content {
@@ -52,4 +67,12 @@ h3 {
 	margin-left: 15px;
 	margin-bottom: 10px;
 	color: white;
+}
+
+.iconholder {
+	height: 30
+	background-color: black;
+	margin: 10px;
+	position: relative;
+
 }
