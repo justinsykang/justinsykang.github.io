@@ -5,6 +5,7 @@ body {
 	border-width: 20px;
 	height: 100%;
 	margin: 0 auto;
+	padding: 30px;
 }
 
 div{
@@ -71,8 +72,11 @@ h3 {
 }
 
 .iwrapper {
+	display: block;
 	margin: 0 auto;
+	width: 1000px;
 	text-align: center;
+	
 
 }
 
