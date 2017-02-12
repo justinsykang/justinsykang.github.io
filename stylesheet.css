@@ -74,19 +74,17 @@ h3 {
 .iwrapper {
 	display: block;
 	margin: 0 auto;
-	width: 1000px;
+	width: 240px;
 	text-align: center;
 	
 
 }
 
 .iconholder {
-	height: 10px;
-	width: 10px;
-	margin: 20px;
 	position: relative;
 }
 
 img.icon {
 	height: 30px;
+	margin: 15px;
 }
